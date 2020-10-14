@@ -5,5 +5,4 @@
 
 
 class HashTable:
-
-    pass
+    size = 10
