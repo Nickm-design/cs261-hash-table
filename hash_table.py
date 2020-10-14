@@ -4,5 +4,7 @@
 # Nick Morris
 
 
-class HashTable:
-    size = 10
+class HashTable():
+    
+    def __init__(self, ele=10):
+        self.size = ele
