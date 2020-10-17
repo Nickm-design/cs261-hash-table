@@ -11,6 +11,7 @@ class HashTable():
         self.data = {None for x in range(0, size)}
     
     def __setitem__(self, idx, value):
-        if idx == value:
-            raise TypeError()
-        return value
+        return idx, value
+    
+    def __getitem__(self,idx):
+        return idx
