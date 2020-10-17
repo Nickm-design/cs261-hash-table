@@ -6,5 +6,11 @@
 
 class HashTable():
     
-    def __init__(self, ele=10):
-        self.size = ele
+    def __init__(self, size=10):
+        self.size = size
+        self.data = {None for x in range(0, size)}
+    
+    def __setitem__(self, idx, value):
+        if idx == value:
+            raise TypeError()
+        return value
