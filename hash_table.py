@@ -14,7 +14,14 @@ class HashTable():
         return hash(idx) % (self.size)
 
     def __setitem__(self, idx, value):
+        self.data = []
+        for kvp in self.size:
+            if kvp <= self.size:
+                kvp = self.data.append([])
+        index = hash(idx)
+        self.data[index] = [idx, value]
         return idx, value
     
-    def __getitem__(self,idx):
+    def __getitem__(self, idx):
         return idx
+        
