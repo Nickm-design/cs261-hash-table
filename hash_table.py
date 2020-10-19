@@ -8,7 +8,7 @@ class HashTable():
     
     def __init__(self, size=10):
         self.size = size
-        self.data = {None for x in range(0, size)}
+        self.data = [0]*self.size
     
     def hash(self, idx):
         return hash(idx) % (self.size)
