@@ -10,6 +10,9 @@ class HashTable():
         self.size = size
         self.data = {None for x in range(0, size)}
     
+    def hash(self, idx):
+        return hash(idx) % (self.size)
+
     def __setitem__(self, idx, value):
         return idx, value
     
